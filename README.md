@@ -49,3 +49,6 @@ Usage: ./autostart.sh [--on]/[--off]
   [--status]:           Show current status. 
 ```
 
+## history
+- v1.0.0: 2021.06.04 extracted this feature from my other project
+- v1.1.0: 2021.07.03 first practical version, confirmed adaptation.

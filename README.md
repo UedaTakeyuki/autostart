@@ -4,7 +4,7 @@ The Simplest way to make your application as servce by addapting ``versatile sys
 ## For what application?
 This is for application:
 
-- just call single command file
+- just start with calling single command file.
 - The name of the folder that contains the command is the same as the command file name
 
 For example:
@@ -15,6 +15,10 @@ For example:
     -- usefullcommand (executable file)
     |
 ```
+
+## how does this works
+Recognize command to start from folder name, and make systemctl unit file.
+
 
 ## install
 Install this as ``submodule`` into your project as follow:
@@ -36,3 +40,13 @@ The following links must be created on your project
 
 - autostart.service
 - autostart.sh
+
+## how to use
+```
+./autostart.sh -h
+Usage: ./autostart.sh [--on]/[--off]
+  [--on]:               Set autostart as ON. 
+  [--off]:              Set autostart as OFF. 
+  [--status]:           Show current status. 
+```
+

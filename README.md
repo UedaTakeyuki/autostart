@@ -38,7 +38,6 @@ cd autostart
 
 The following links must be created on your project
 
-- autostart.service
 - autostart.sh
 
 ## how to use

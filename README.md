@@ -9,11 +9,12 @@ This is for application:
 
 For example:
 
+```
 --usefullcommand  (folder name)
     |
     -- usefullcommand (executable file)
     |
-
+```
 
 ## install
 Install this as ``submodule`` into your project as follow:

@@ -27,6 +27,7 @@ on(){
     cp autostart/autostart.service ${CMD}.service
     sed -i "s@^WorkingDirectory=.*@WorkingDirectory=${SCRIPT_DIR}@" ${CMD}.service
     sed -i "s@^ExecStart=.*@ExecStart=${SCRIPT_DIR}/${CMD}@" ${CMD}.service
+    sed -i "s@PIDFile=/var/run/.*@PIDFile=/var/run//${CMD}.pid@" ${CMD}.service
   fi
 #	sudo cp ${SCRIPT_DIR}\/${CMD}.service /etc/systemd/system/${CMD}.service
   sudo ln -s ${SCRIPT_DIR}\/${CMD}.service /etc/systemd/system/${CMD}.service

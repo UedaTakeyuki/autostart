@@ -10,10 +10,9 @@ This is for application:
 For example:
 
 ```
---usefullcommand  (folder name)
-    |
-    -- usefullcommand (executable file)
-    |
+├───foo
+│    foo
+
 ```
 
 ## how does this works

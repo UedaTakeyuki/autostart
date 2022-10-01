@@ -3,3 +3,5 @@
 2021.07.03 v1.0.1
 
 2021.07.15 fix: pid file name
+
+2022.10.01 change script name from autostart.sh autostart

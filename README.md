@@ -4,16 +4,15 @@ The Simplest way to make your application as servce by addapting ``versatile sys
 ## For what application?
 This is for application:
 
-- just start with calling single command file.
-- The name of the folder that contains the command is the same as the command file name
+- started with calling single command file, in other words ``Type=simple``.
+- the name of the folder is the same as the command file name.
 
 For example:
 
 ```
---usefullcommand  (folder name)
-    |
-    -- usefullcommand (executable file)
-    |
+├───foo
+│    foo
+
 ```
 
 ## how does this works
@@ -25,7 +24,7 @@ Install this as ``submodule`` into your project as follow:
 
 ```
 cd your-project-dir
-git submodule add git@github.com:UedaTakeyuki/autostart.git
+git submodule add https://github.com/UedaTakeyuki/autostart.git
 ```
 
 ## setup

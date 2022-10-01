@@ -1,1 +1,1 @@
-ln -s `pwd`/autostart ../autostart
+ln -s `pwd`/autostart.sh ../autostart.sh

@@ -4,4 +4,4 @@
 
 2021.07.15 fix: pid file name
 
-2022.10.01 change script name from autostart.sh autostart
+2022.10.01 change script name from autostart.sh autostart -> revert

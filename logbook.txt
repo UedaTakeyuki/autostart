@@ -5,3 +5,5 @@
 2021.07.15 fix: pid file name
 
 2022.10.01 change script name from autostart.sh autostart -> revert
+
+2023.12.26 copy service file from realpath

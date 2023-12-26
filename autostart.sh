@@ -11,6 +11,7 @@
 # @copyright Copyright© Atelier UEDA 2018 - All rights reserved.
 #
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
+REAL_DIR=$(dirname $(realpath $0))
 CMD=$(basename -z $SCRIPT_DIR | sed 's/\x0//g')
 
 usage_exit(){
@@ -24,7 +25,7 @@ usage_exit(){
 on(){
   # create systemctl unit file if not exist
   if [ ! -f ${CMD}.service ]; then
-    cp autostart/autostart.service ${CMD}.service
+    cp ${REAL_DIR}/autostart.service ${CMD}.service
     sed -i "s@^WorkingDirectory=.*@WorkingDirectory=${SCRIPT_DIR}@" ${CMD}.service
     sed -i "s@^ExecStart=.*@ExecStart=${SCRIPT_DIR}/${CMD}@" ${CMD}.service
     sed -i "s@PIDFile=/var/run/.*@PIDFile=/var/run/${CMD}.pid@" ${CMD}.service
